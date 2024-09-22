@@ -1,0 +1,392 @@
+@media (max-width: 1094px) {
+
+
+  header {
+    & nav {
+      & .navbar-content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        position: relative;
+
+        & #dropdown-nav {
+          position: absolute;
+          content: "";
+          right: 1rem;
+          opacity: 0;
+          top: 2.2rem;
+          cursor: pointer;
+          display: block;
+          width: 3rem;
+          height: 3rem;
+        }
+
+        & #icons {
+          opacity: 1;
+          position: absolute;
+          right: 1rem;
+          top: 2.2rem;
+          cursor: pointer;
+          font-size: 3rem;
+          display: block;
+        }
+
+        & .navbar-list {
+          background-color: #fff;
+          z-index: 2;
+          position: absolute;
+          content: "";
+          top: 7rem;
+          right: -40rem;
+          display: none;
+          flex-direction: column;
+          width: 24rem;
+
+          & li {
+            border: 0.1rem solid rgba(218, 217, 217, 0.753);
+          }
+
+          & li a,
+          .pages-a {
+            width: 100%;
+            padding: 1.1rem 1rem;
+          }
+
+          & .pages {
+            & i {
+              rotate: 270deg;
+              position: absolute;
+              right: 2.5rem;
+            }
+
+            & .pages-inner--list {
+              top: -0.1rem;
+              left: -18rem;
+            }
+          }
+        }
+
+        & #dropdown-nav:checked~.navbar-list {
+          right: 0;
+          display: inline-block;
+        }
+
+        & #dropdown-nav:checked {
+          color: transparent;
+          background-color: transparent;
+        }
+
+        & .navbar-icons {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section-hero .hero-slider {
+    & img {
+      height: 50rem;
+    }
+  }
+
+  .spring-collection,
+  .winter-collection {
+    & img {
+      z-index: -1;
+    }
+  }
+
+  .section-services {
+    & .services-content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+    }
+  }
+
+  & .section-trandy {
+    & .trandy-products {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+    }
+  }
+
+  & footer {
+    & .footer-content {
+      margin: 8rem 0;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (min-width: 720px) and (max-width: 900px) {
+  .section-season--collections {
+    & .season-collections {
+
+      & .spring-collection,
+      .winter-collection {
+        padding: 1rem 2rem;
+
+        & h4 {
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+
+        & h1 {
+          font-size: 2.7rem;
+        }
+
+        & img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 841px) {
+  .section-products {
+    & .products-varity {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      gap: 1.59rem;
+    }
+  }
+
+  .section-hero .hero-slider {
+    & img {
+      height: 40rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    & .slide-content {
+      & .slide-subheading {
+        font-size: 2rem;
+      }
+
+      & .slide-heading {
+        font-size: 5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      & .btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .section-season--collections {
+    & .season-collections {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+
+  .section-hero .hero-slider {
+    & img {
+      height: 30rem;
+    }
+
+    & .slide-content {
+      & .slide-heading {
+        font-size: 4.5rem;
+      }
+
+      & .btn {
+        padding: 0.9rem 1.5rem;
+      }
+    }
+  }
+
+  & .section-trandy {
+    & .trandy-products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  & footer {
+    & .footer-item-two {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    & .footer-item-two {
+      & .footer-item {
+        flex-basis: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .section-hero .hero-slider {
+    & img {
+      height: 20rem;
+    }
+
+    & .slide-content {
+      & .slide-subheading {
+        font-size: 1.5rem;
+      }
+
+      & .slide-heading {
+        font-size: 3.5rem;
+      }
+
+      & .btn {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 482px) {
+  .section-services {
+    & .services-content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: auto;
+    }
+  }
+
+  .section-products {
+    & .products-varity {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: space-evenly;
+      gap: 1.59rem;
+    }
+  }
+
+  .services-content {
+    & .services-items {
+      justify-content: center;
+    }
+  }
+
+  header {
+    .support-div {
+      & .support-content {
+        justify-content: center;
+
+        & .support-content-left {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section-season--collections {
+    & .season-collections {
+
+      & .spring-collection,
+      .winter-collection {
+        padding: 1rem 2rem;
+
+        & h4 {
+          font-size: 1.8rem;
+        }
+
+        & h1 {
+          font-size: 3.3rem;
+        }
+
+        & .btn {
+          margin: 1rem 0 2rem;
+        }
+
+        & img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .section-trandy {
+    & .trandy-products {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .section-hero .hero-slider {
+    & img {
+      height: 18rem;
+    }
+
+    & .slide-content {
+      & .slide-subheading {
+        font-size: 1rem;
+      }
+
+      & .slide-heading {
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+      }
+
+      & .btn {
+        padding: 0.2rem 0.7rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .section-season--collections {
+    & .season-collections {
+
+      & .spring-collection,
+      .winter-collection {
+        padding: 1rem 2rem;
+
+        & h4 {
+          margin-top: 1rem;
+          font-size: 1.5rem;
+        }
+
+        & h1 {
+          font-size: 2.4rem;
+        }
+
+        & .btn {
+          margin: 1rem 0 1rem;
+          padding: 0.8rem 1rem;
+        }
+
+        & img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  header {
+    & nav {
+      & .navbar-content {
+        & #dropdown-nav {
+          position: absolute;
+          content: "";
+          right: 0;
+          opacity: 0;
+          top: 2.2rem;
+          cursor: pointer;
+          display: block;
+          width: 3rem;
+          height: 3rem;
+        }
+
+        & #icons {
+          opacity: 1;
+          position: absolute;
+          right: 0;
+          top: 2.2rem;
+          cursor: pointer;
+          font-size: 3rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
