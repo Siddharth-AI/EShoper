@@ -12,6 +12,9 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     slidesToShow: 6,
     slidesToScroll: 6,
+    swipeToSlide: true,
+    loop: true,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,
